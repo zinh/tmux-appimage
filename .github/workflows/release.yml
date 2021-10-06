@@ -18,5 +18,5 @@ jobs:
       - name: save artifact
         uses: actions/upload-artifact@v2
         with:
-          name: tmux-3.1c-x86_64.AppImage
-          path: tmux-3.1c-x86_64.AppImage
+          name: tmux.AppImage
+          path: tmux-*.AppImage
