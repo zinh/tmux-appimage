@@ -13,3 +13,10 @@ jobs:
       - name: build docker image
         run: |
           docker build . -t tmux
+          docker create -ti --name tmuxcontainer tmux bash
+          docker cp tmuxcontainer:/opt/releases/tmux-3.1c-x86_64.AppImage .
+      - name: save artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: tmux-3.1c-x86_64.AppImage
+          path: tmux-3.1c-x86_64.AppImage
