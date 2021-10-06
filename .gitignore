@@ -5,3 +5,4 @@ dronesecrets.txt
 terraform/notes.md
 terraform.tfstate
 terraform.tfstate.backup
+*.swp
