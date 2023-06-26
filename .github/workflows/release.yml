@@ -33,7 +33,7 @@ jobs:
         with:
           tag_name: run-${{ github.run_number }}
           release_name: "Build #${{ github.run_number }}"
-          body_path: release.md
+          body: "Tmux v${{ inputs.tmux-version }}"
           prerelease: false
           draft: false
       - uses: actions/upload-release-asset@v1
